@@ -1,0 +1,18 @@
+config:
+  target: "https://zv3cfg7vcg.us-east-1.awsapprunner.com"
+  phases:
+    - duration: 1
+      arrivalRate: 500
+      name: burst
+  plugins:
+    metrics-by-endpoint: {}
+scenarios:
+  - name: "Hello"
+    flow:
+      - get:
+          url: "/"
+      - get:
+          url: "/hey"
+      - post:
+          url: "/echo"
+          json: "{{ Hi }}"
