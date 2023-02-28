@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "artillery run src/loadTest.yml"
+    "test": "artillery run src/loadTest.yml",
+    "testExpress": "artillery run src/loadTestExpress.yml"
   },
   "author": "",
   "license": "ISC",

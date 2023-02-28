@@ -1,5 +1,5 @@
 config:
-  target: "https://zv3cfg7vcg.us-east-1.awsapprunner.com"
+  target: "https://h3niyfmvqp.us-east-1.awsapprunner.com"
   phases:
     - duration: 1
       arrivalRate: 500
